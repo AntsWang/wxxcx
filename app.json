@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/mine/index"
+    "pages/find/index",
+    "pages/my/index",
+    "pages/playing/index",
+    "pages/account/index",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,12 +15,28 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "iconPath":"/images/music.png",
+        "selectedIconPath":"/images/music-ed.png",
+        "pagePath": "pages/find/index",
+        "text": "发现音乐"
       },
       {
-        "pagePath": "pages/mine/index",
-        "text": "我的"
+        "iconPath":"/images/yinyue.png",
+        "selectedIconPath":"/images/yinyue-ed.png",
+        "pagePath": "pages/my/index",
+        "text": "我的音乐"
+      },
+      {
+        "iconPath":"/images/ziyuanldpi.png",
+        "selectedIconPath":"/images/ziyuanldpi-ed.png",
+        "pagePath": "pages/playing/index",
+        "text": "正在播放"
+      },
+      {
+        "iconPath":"/images/zhanghao.png",
+        "selectedIconPath":"/images/zhanghao-ed.png",
+        "pagePath": "pages/account/index",
+        "text": "账号"
       }
     ]
   },

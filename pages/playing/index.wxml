@@ -1,0 +1,18 @@
+<view>
+  <view class='inputWraper'>
+  <input class='input' placeholder='搜索'></input>
+  </view>
+  <picker bindchange="bindchange" mode='region'>
+  地区选择：{{area}}
+  </picker>
+          <view class="listItem"  wx:for="{{list}}" wx:key="index">
+          <view style="width:70px;height:70px">
+           <image mode='scaleToFill' style="width:70px;height:70px" src='{{item.posters.thumbnail}}'></image>
+          </view>
+                 
+                    <view style="margin-left:20px;flex:1">
+                        <view><text class='text'>{{item.title}}</text></view>
+                        <view><text class='text'>{{item.year}}</text></view>
+                    </view>
+          </view>
+</view>

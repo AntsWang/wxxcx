@@ -1,0 +1,28 @@
+/**index.wxss**/
+.map{
+  flex:1;
+  height: 500px;
+}
+.listItem{
+  display: flex;
+  height:80px;
+  padding:0 10px;
+  border-bottom:1px solid #ccc;
+  align-items: center;
+}
+.inputWraper{
+  padding:0 10px;
+  height:40px;
+  border:1px solid #ccc;
+}
+.input{
+  height: 40px;
+  line-height: 40px;
+}
+.text{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

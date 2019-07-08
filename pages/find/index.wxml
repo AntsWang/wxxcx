@@ -9,28 +9,37 @@
     </swiper>
 
     <view style="display:flex;height:180rpx;border-bottom:1px solid #ccc">
-    <view style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+    <view bindtap='goFM' style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
         <text class='iconfont icon-fm' style='color:#d81e06;font-size:60rpx;'></text>
        <view><text>私人FM</text></view> 
     </view>
-            <view style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+            <view bindtap='goTuiJian' style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
         <text class='iconfont icon-tuijian' style='color:#d81e06;font-size:60rpx;'></text>
          <text>每日推荐</text>
     </view>
-            <view style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+            <view bindtap='goGeDan' style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
         <text class='iconfont icon-gedan' style='color:#d81e06;font-size:60rpx;'></text>
     <text>歌单</text>
     </view>
-           <view style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+           <view bindtap='goPaiHang' style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
         <text class='iconfont icon-paihang' style='color:#d81e06;font-size:60rpx;'></text>
     <text>排行榜</text>
     </view>
     </view>
 
     <view>
-       <view>
+       <view style='height:90rpx;display:flex;align-items:center'>
           <text>推荐歌单</text>
-          <text class='iconfont icon-right' style='font-size:60rpx;'></text>
+          <text class='iconfont icon-right' style='font-size:46rpx;'></text>
+       </view>
+       <view style="display:flex;flex-wrap: wrap;">
+          <view wx:for="{{tuijiangedan}}" wx:key='index' wx:if="{{index<=5}}" style="width:240rpx;margin-left:10rpx;margin-bottom:10rpx">
+             <image style="width:240rpx;height:240rpx" src='{{item.picUrl}}'>
+             </image>
+             <text style="font-size:24rpx">
+             {{item.name}}
+             </text>
+          </view>
        </view>
     </view>
 </view>

@@ -4,6 +4,8 @@
     "pages/my/index",
     "pages/playing/index",
     "pages/account/index",
+    "pages/gedan/index",
+    "pages/tuijian/index",
     "pages/logs/logs"
   ],
   "window": {

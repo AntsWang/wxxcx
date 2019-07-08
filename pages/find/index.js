@@ -39,25 +39,25 @@ this.getTuiJian();
           },()=>{
       
           });
-  },
-  changeIndicatorDots: function(e) {
-    this.setData({
-      indicatorDots: !this.data.indicatorDots
+},
+  goTuiJian: function () {
+    wx.navigateTo({
+      url: '/pages/tuijian/index',
     })
   },
-  changeAutoplay: function(e) {
-    this.setData({
-      autoplay: !this.data.autoplay
+  goGeDan:function(){
+    wx.navigateTo({
+      url: '/pages/gedan/index',
     })
   },
-  intervalChange: function(e) {
-    this.setData({
-      interval: e.detail.value
+  goFM: function () {
+    wx.navigateTo({
+      url: '/pages/gedan/index',
     })
   },
-  durationChange: function(e) {
-    this.setData({
-      duration: e.detail.value
+  goGeDan: function () {
+    wx.navigateTo({
+      url: '/pages/gedan/index',
     })
   }
 })
